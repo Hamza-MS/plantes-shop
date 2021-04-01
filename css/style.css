@@ -1,0 +1,173 @@
+body {
+    font-family: monospace;
+    margin: 0;
+}
+header {
+    box-sizing: border-box;
+    align-items: center;
+    min-height: 400px;
+    height: 550px;
+    background-size:contain;
+    overflow:hidden;
+    background-image: url("../images/img-header.jpg");
+}
+header img {
+    border-radius: 50%;
+    height: 100px;
+    width: 150px;
+}
+header nav{
+    display: flex;
+    list-style: none;
+}
+header h1 {
+    box-sizing: border-box;
+    font-family: cursive;
+    font-size: 80px;
+    margin: 50px auto;
+    text-align: center;
+}
+#top {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+#top li {
+    margin: 30px;
+    padding: 10px ;
+    background-color: honeydew;
+    border-radius: 15px;
+    border: lemonchiffon solid;
+    text-align: center;
+}
+/*------------ service icons ----------------*/
+
+.service{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.service i {
+    color: olivedrab;
+    font-size: 50px;
+}
+.service-item {
+    font-size: 25px;
+}
+
+/*------------ best sels------------- */
+.best-items , .all-plantes{
+    margin: 0 40px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px;
+    
+}
+h2::before{
+    content: "";
+    background-color: mediumseagreen;
+    width: 50px;
+    height: 8px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+}
+.best-plants {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.plantes {
+    min-width: 250px;
+    min-height: 300px;
+    height: 360px;
+    flex: 1;
+    margin: 10px;
+    border: mediumaquamarine solid 7px;
+    border-radius: 15%;
+    overflow: hidden;
+}
+.plantes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center , stretch;
+}
+.plantes img{
+    flex: 8;
+}
+.plante-details{
+    background-color: mediumaquamarine;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0%;
+    align-items: flex-start;
+    position: relative;
+}
+.plante-name{
+    font-size: x-large;
+    font-weight: 600;
+    margin: 10px 20px;
+
+}
+.plante-price {
+    font-weight: 500;
+    margin: 0 30px;
+}
+.more-info {
+    font-weight: bolder;
+    font-size: 20px;
+    background-color:mintcream;
+    padding: 10px;
+    border-radius: 20%;
+    align-self: flex-end;
+    position: absolute;
+    top: 7px;
+    margin: 0px 10px;
+}
+
+/* ---------all plantes-------- */
+.plantes-grid{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 5px ;
+    height: 600px;
+    grid-auto-flow: dense;
+}
+.plantes-grid div{
+    display: flex;
+}
+.plantes-grid div img{
+    flex: 1;
+    border: mediumaquamarine solid 10px;
+    border-radius: 20%;
+}
+ .plante5 {
+    grid-column: span 2 ;
+    grid-row: span 2;
+    height: 200px;
+    width: 200px;
+}
+.plante6{
+    
+}
+.plante7{
+    
+}
+.plante8{
+    
+
+}
+.plante9{
+    
+}
+.plante10{
+    
+}
+
+
